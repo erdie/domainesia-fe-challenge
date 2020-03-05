@@ -29,13 +29,14 @@ body, html {
     outline: none;
     font-size: 16px;
 }
+
 .button--primary {
     background-color: var(--secondary-color);
     color: white;
     border: none;
 }
 
-.button-secondary {
+.button--secondary {
     background-color: white;
     color: var(--secondary-color);
     border: 1px solid var(--secondary-color);
@@ -340,9 +341,13 @@ input {
 }
 
 .package__label {
-    padding: 10px;
+    padding: 10px 20px;
     background-color: var(--bg-color);
     position: absolute;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--primary-color);
 }
 
 .package__wrapper {
@@ -392,6 +397,76 @@ input {
 
 .package__description > ul > li > b {
     font-weight: 600;
+}
+
+/* Support Section */
+.support {
+    padding: 100px 0;
+}
+
+.support__group {
+    display: flex;
+    align-items: center;
+}
+
+.support__image {
+    flex: 1;
+}
+
+.support__image > img {
+    max-width: 300px;
+    width: 100%;
+}
+
+.support__description {
+    flex: 0 0 70%;
+}
+
+.support__description > h2{
+    font-weight: 500;
+}
+
+.support__description > p{
+    margin: 20px 0;
+    line-height: 1.8;
+    font-weight: 300;
+}
+
+.support__services {
+    display: flex;
+    align-items: center;
+}
+
+.support__services > img{
+    max-width: 40px;
+    width: 100%;
+    margin: 0 20px 0 30px;
+    cursor: pointer;
+}
+
+.support__input {
+    max-width: 430px;
+    width: 100%;
+    position: relative;
+}
+
+.support__input > input{
+    border: 1px solid #dedede;
+    max-width: 400px;
+    width: 100%;
+}
+
+.support__input > span:after {
+    content: '';
+    background-image: url('./assets/icons/send.svg');
+    background-size: 30px 30px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 0;
+    top: 6px;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 /* Footer Section */
