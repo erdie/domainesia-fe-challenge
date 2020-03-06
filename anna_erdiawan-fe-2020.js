@@ -5,7 +5,7 @@ fetch('https://domainesia-db.firebaseio.com/hosting.json')
         let output = '';
         hostingPackage.forEach((item, index) => {
             if (index > 2) return
-            output += 
+            output +=
             `<div class="package__card">
                 <div class="package__wrapper">
                     <div class="package__content">
