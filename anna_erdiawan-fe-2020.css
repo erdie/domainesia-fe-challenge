@@ -1,5 +1,6 @@
 /*
-    Styling by Anna Erdiawan
+    Styling from scratch by Anna Erdiawan
+    Version: 1.2
 */
 
 /* VARIABLE */
@@ -20,6 +21,14 @@ body, html {
 }
 
 /* COMPONENTS */
+/* Container */
+.container {
+    max-width: 1114px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Button */
 .button {
     border-radius: 5px;
@@ -507,7 +516,7 @@ input {
 
 /* BREAKPOINTS */
 /* Mobile */
-@media only screen and (max-width: 600px) {
+@media (max-width: 600px) {
     /* Container */
     .container {
         width: 100%;
@@ -532,9 +541,14 @@ input {
 
     .header__input--group > input {
         flex: 8;
+        box-sizing: border-box;
     }
+
     .header__input--group > .button {
         flex: 1;
+        box-sizing: border-box;
+        height: 100%;
+        box-sizing: border-box;
     }
 
     .header__title {
@@ -641,17 +655,21 @@ input {
     .footer__copyright {
         text-align: center;
     }
+}
 
-@media only screen and (min-width: 600px) and (max-width: 1024px) {
+/* Tablet */
+@media (min-width: 600px) and (max-width: 1024px) {
     .container {
         max-width: 900px;
         width: 100%;
         margin-left: auto;
         margin-right: auto;
+        padding: 0 15px;
     }
 }
 
-@media only screen and (min-width: 1366px) {
+/* Desktop */
+@media (min-width: 1366px) {
     .container {
         max-width: 1114px;
         width: 100%;
