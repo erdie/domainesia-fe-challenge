@@ -1,8 +1,8 @@
 fetch('https://domainesia-db.firebaseio.com/hosting.json')
     .then(response => response.json())
     .then(data => {
-        const hostingPackage = data;
-        let output = '';
+        const hostingPackage = data
+        let output = ''
         hostingPackage.forEach((item, index) => {
             if (index > 2) return
             output +=
@@ -17,6 +17,7 @@ fetch('https://domainesia-db.firebaseio.com/hosting.json')
                         </div>
                         <div class="package__description">
                             <ul>
+                                <li>CPU ${item.Memory}</li>
                                 <li><b>${item.storage}</b> Space</li>
                                 <li><b>${item.bandwidth}</b> Bandwidth</li>
                                 <li>5 Website</li>
