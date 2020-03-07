@@ -190,6 +190,12 @@ input {
     padding: 10px 0;
 }
 
+.nav__group {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
 .nav__brand > img {
     max-width: 170px;
 }
@@ -198,6 +204,10 @@ input {
     list-style: none;
     padding: 10px 0;
     margin-left: 20px;
+}
+
+.nav__menu--mobile {
+    display: flex;
 }
 
 .nav__item {
@@ -523,6 +533,11 @@ input {
         margin-right: auto;
         margin-left: auto;
     }
+
+    /* Utilities */
+    .hide--mobile {
+        display: none !important;
+    }
     
     /* Top Bar Section Mobile */
     .top-bar {
@@ -530,6 +545,33 @@ input {
     }
 
     /* Hero Section Mobile */
+    .nav {
+        padding: 0 15px;
+    }
+
+    .nav__brand > img {
+        max-width: 150px;
+        margin-left: 5px;
+    }
+
+    .nav__group {
+        justify-content: flex-end;
+    }
+
+    .nav__menu {
+        padding: 5px 0;
+        margin: 15px 5px 5px 0;
+        transform: scale(0.95);
+    }
+
+    .nav__menu > li {
+        display: inline-block;
+    }
+
+    .nav__item {
+        padding: 5px;
+    }
+
     .header__input {
         margin: 0 auto;
     }
