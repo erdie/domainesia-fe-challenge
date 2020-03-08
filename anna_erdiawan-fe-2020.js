@@ -6,7 +6,6 @@ fetch(rootURL + 'personal.json')
     .then(data => {
         const hostingPackage = data
         let output = ''
-        const elem = document.querySelector('.hide-element')
 
         // Looping for Cards
         hostingPackage.forEach((item) => {
