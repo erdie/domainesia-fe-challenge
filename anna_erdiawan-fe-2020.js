@@ -6,6 +6,7 @@ fetch(rootURL + 'personal.json')
     .then(data => {
         const hostingPackage = data
         let output = ''
+        const elem = document.querySelector('.hide-element')
 
         // Looping for Cards
         hostingPackage.forEach((item) => {
@@ -30,8 +31,8 @@ fetch(rootURL + 'personal.json')
                                         <li><b>${item.bandwidth}</b> Bandwidth</li>
                                         <li><b>${item.website}</b> Website</li>
                                         <li><b>${item.email}</b> Email</li>
-                                        <li class=".some-element">Domain ${item.domain}!</li>
-                                        <li class=".some-element">Akses ${item.access}</li>
+                                        <li id="hide-domain-element">Domain ${item.domain}!</li>
+                                        <li id="hide-access-element">Akses ${item.access}</li>
                                     </ul>
                                 </div>
                             </div>
@@ -43,14 +44,12 @@ fetch(rootURL + 'personal.json')
                         </div>
                     </div>`
                 }
-
-        // Remove element with null or undefined object 
-        hostingPackage.filter((item) => {
-            const elem = document.querySelector('.some-element')
-            if (item === 'null'){
-                elem.style.display = 'none'
-            }
-        })
+        
+        // remove element if some object undefined
+        if (hostingPackage.domain === undefined || hostingPackage.access === undefined) {
+            // document.getElementById('hide-domain-element hide-access-element').style.display = 'none';
+            console.log('Object Domain '+hostingPackage.domain)
+        }
     })
 .catch(error => console.error(error))
 
