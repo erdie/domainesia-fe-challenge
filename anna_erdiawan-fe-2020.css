@@ -176,7 +176,7 @@ input {
 
 /* Promo Section */
 .promo {
-    padding: 50px 0;
+    padding: 80px 0 0 0;
 }
 
 .promo__group {
@@ -357,7 +357,7 @@ input {
 
 /* Feature Section */
 .feature__group {
-    padding: 50px 0 0 0;
+    padding: 80px 0 20px 0;
 }
 
 .feature__title > h2 {
@@ -425,7 +425,6 @@ input {
     flex: 1;
     text-align: center;
     margin: 15px;
-    border: 1px solid #eeeeee;
     border-radius: 5px;
     transition: 0.3s;
     background-color: white;
