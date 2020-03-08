@@ -174,6 +174,92 @@ input {
     margin-right: 6px;
 }
 
+/* Promo Section */
+.promo {
+    padding: 50px 0;
+}
+
+.promo__group {
+    display: flex;
+    height: 100%;
+    padding: 0 20px;
+}
+.promo__content--first, .promo__content--second {
+    height: 50%;
+    display: flex;
+    border-left: 1px solid #dedede;
+}
+
+.promo__content--third, .promo__content--fourth {
+    height: 50%;
+    display: flex;
+    border-left: 1px solid #dedede;
+}
+
+.promo__content--first, .promo__content--third {
+    height: 50%;
+    display: flex;
+    border-top: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+}
+
+.promo__content--second, .promo__content--fourth {
+    border-bottom: 1px solid #dedede;
+}
+
+.promo__content--first {
+    border-top-left-radius: 5px;
+}
+
+.promo__content--second {
+    border-bottom-left-radius: 5px;
+}
+
+.promo__content--fifth {
+    height: 100%;
+    border: 1px solid #dedede;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-bottom: 1px;
+}
+
+.promo__content--fifth > p {
+    color: red;
+    padding: 10px 0;
+}
+
+.promo__content--fifth > img {
+    padding: 10px 0;
+}
+
+.promo__content--price > small {
+    padding: 10px 0;
+    color: #ababab;
+    text-decoration: line-through;
+}
+
+.promo__content--price > p {
+    margin: 0;
+    padding: 10px 0;
+}
+
+.promo__group--1, .promo__group--2, .promo__group--3 {
+    flex: 1;
+    width: 100%;
+    box-sizing: border-box;
+} 
+
+.promo__content {
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.promo__content > p {
+    margin: auto;
+    line-height: 1.8;
+}
+
 /* Hero Section */
 .hero {
     background-image: linear-gradient(-51deg, #00D7F8 0%, #00AEEE 100%);
@@ -601,6 +687,35 @@ input {
 
     .header__title > h1 {
         font-size: 32px;
+    }
+
+    /* Promo Section Mobile */
+    .promo__group {
+        flex-direction: column;
+    }
+
+    .promo__content--first, .promo__content--second, .promo__content--third, .promo__content--fourth {
+        border-left: 1px solid #dedede;
+        border-right: 1px solid #dedede;
+        border-bottom: none;
+        border-top: 1px solid #dedede;
+    }
+
+    .promo__group--1 > .promo__content > p, .promo__group--2 > .promo__content > p {
+        padding: 8px 0;
+    }
+
+    .promo__content--first {
+        border-top-right-radius: 5px;
+    }
+
+    .promo__content--second {
+        border-bottom-left-radius: 0;
+    }
+
+    .promo__content--fifth {
+        border-bottom-left-radius: 5px;
+        border-top-right-radius: 0;
     }
 
     /* Feature Section Mobile */
