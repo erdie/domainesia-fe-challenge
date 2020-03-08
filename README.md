@@ -19,6 +19,7 @@ For styling, I'm not using SASS or LESS but traditional CSS. For grid or respons
 For the UI design I made myself using Sketch from scratch inspired by saveral hosting or cloud providers website but not yet with UX Research.
 
 Here the design https://scene.zeplin.io/project/5e5e73d918f99772bb60661d.
+
 Or you can download in here https://github.com/erdie/domainesia-fe-challenge/blob/master/domainesia-ui-design.sketch
 
 ## Database & API
